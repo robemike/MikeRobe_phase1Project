@@ -1,0 +1,165 @@
+.theBody {
+    background-color: bisque;
+}
+
+#search-field {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#headercontent {
+    color: blue;
+    background-color: black;
+    font-size: 40px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+#heading {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#button {
+    border-radius: 10px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+
+.search-container {
+    position: relative;
+    top: 30%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #ccc;
+}
+
+.search-container input[type=text] {
+    width: 150px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.workingspace {
+    margin-top: 20px;
+    padding: 50px;
+    background-color: white;
+}
+
+#displaybox {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.dropdown-option {
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.dropdown-option.hovered {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.dropdown-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#sell{
+    color: green;
+    font-size: 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bussiness Management System</title>
+    <style>
+        /* .theBody{
+            background-image: url(assets/images/istockphoto-596042932-612x612.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        } */
+        .theBody {
+            background-color: bisque;
+        }
+
+        #search-field {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        #headercontent {
+            color: blue;
+            background-color: black;
+            font-size: 40px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        #heading {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        #button {
+            border-radius: 10px;
+        }
+
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #3e8e41;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show the dropdown menu */
+        .show {
+            display: block;
+        }
+
+
+        .search-container {
+            position: relative;
+            top: 30%;
+            left: 0;
+            transform: translateY(-50%);
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-right: 1px solid #ccc;
+        }
+
+        .search-container input[type=text] {
+            width: 150px;
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+        .workingspace {
+            margin-top: 20px;
+            padding: 50px;
+            background-color: white;
+        }
+
+        #displaybox {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        .dropdown-option {
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body class="theBody">
+    <div class="mainheader">
+        <div id="headercontent"><i>Business Management System</i></div>
+        <div class="dropdown">
+            <button id="dropdownBtn" , class="dropbtn">
+                HELP
+            </button>
+            <div id="dropdownContent" , class="dropdown-content">
+                <a href="#">
+                    <p>Change Business name here:</p>
+                    <div class="box">
+                        <input type="text" , id="newinputheading" , placeholder="Enter Business Name here ..." ,
+                            oninput="changeHeading()">
+                        <button onclick="saveHeading()" , id="button">CHANGE <br> NAME</button>
+                    </div>
+                </a>
+                <a href="#" id="employeeLink">List of employees
+                    <button id="showEmployeesButton">Show Employees</button>
+                    <ul id="employeeList" style="display: none;">
+                        <li><span class="employeeName">Employee 1</span></li>
+                        <li><span class="employeeName">Employee 2</span></li>
+                        <li><span class="employeeName">Employee 3</span></li>
+                        <li><span class="employeeName">Employee 4</span></li>
+                        <li><span class="employeeName">Employee 5</span></li>
+                        <li><span class="employeeName">Employee 6</span></li>
+                        <li><span class="employeeName">Employee 7</span></li>
+                        <li><span class="employeeName">Employee 8</span></li>
+                        <li><span class="employeeName">Employee 9</span></li>
+                        <li><span class="employeeName">Employee 10</span></li>
+                    </ul>
+                </a>
+
+                <a href="#">
+                    List of Products <br>
+                    <button id="showProduct">Show Products</button>
+                    <ul id="productList" style="display: none;">
+
+                </a>
+            </div>
+        </div>
+        <h1 id="heading"><i>YOUR BUSINESS NAME</i></h1>
+    </div>
+
+    <!-- <label for="item">
+        <select name="item" id="item">
+        
+        </select>
+    </label> -->
+
+
+    <div class="workingspace">
+        <div>
+            <H1>WORKING SPACE</H1>
+            <div class="search-container">
+                <input type="text" , id="searchInput" placeholder="Search...">
+            </div>
+            <div id="searchResults">
+
+            </div>
+        </div>
+
+        <div id="displaybox">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+            <div id="totalDisplay">Total: 0</div>
+        </div>
+    </div>
+
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const showEmployeesButton = document.getElementById('showEmployeesButton');
+    const employeeLink = document.getElementById('employeeLink');
+
+    // Array of employee names
+    const employees = [
+        'Employee 1',
+        'Employee 2',
+        'Employee 3',
+        'Employee 4',
+        'Employee 5',
+        // Add more employee names here as needed
+    ];
+
+    showEmployeesButton.addEventListener('click', function () {
+        // Check if the unordered list already exists
+        const existingList = employeeLink.querySelector('ul');
+        if (existingList) {
+            existingList.style.display = existingList.style.display === 'none' ? 'block' :
+                'none';
+            return;
+        }
+
+        // If the unordered list doesn't exist, create and append it
+        const ul = document.createElement('ul');
+        employees.forEach(employee => {
+            const li = document.createElement('li');
+            li.textContent = employee;
+            ul.appendChild(li);
+        });
+        employeeLink.appendChild(ul);
+    });
+});

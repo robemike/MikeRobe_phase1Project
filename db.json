@@ -1,0 +1,113 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "item": "steel-bar D8",
+      "price": 1650,
+      "quantity": 100
+    },
+    {
+      "id": "2",
+      "item": "steel-bar D10",
+      "price": 2000,
+      "quantity": 100
+    },
+    {
+      "id": "3",
+      "item": "steel-bar D12",
+      "price": 2150,
+      "quantity": 100
+    },
+    {
+      "id": "4",
+      "item": "4*4 square tubes",
+      "price": 2800,
+      "quantity": 100
+    },
+    {
+      "id": "5",
+      "item": "2*2 square tubes",
+      "price": 2200,
+      "quantity": 100
+    },
+    {
+      "id": "6",
+      "item": "1*1 square tube",
+      "price": 400,
+      "quantity": 100
+    },
+    {
+      "id": "7",
+      "item": "black sheet",
+      "price": 650,
+      "quantity": 100
+    },
+    {
+      "id": "8",
+      "item": "wire mesh",
+      "price": 750,
+      "quantity": 100
+    },
+    {
+      "id": "9",
+      "item": "paint",
+      "price": 600,
+      "quantity": 100
+    },
+    {
+      "id": "10",
+      "item": "steel-bar D8",
+      "price": 100,
+      "quantity": 100
+    },
+    {
+      "id": "11",
+      "item": "steel-bar D10",
+      "price": 100,
+      "quantity": 100
+    },
+    {
+      "id": "12",
+      "item": "steel-bar D12",
+      "price": 100,
+      "quantity": 100
+    },
+    {
+      "id": "13",
+      "item": "4*4 square tubes",
+      "price": 100,
+      "quantity": 100
+    },
+    {
+      "id": "14",
+      "item": "2*2 square tubes",
+      "price": 100,
+      "quantity": 100
+    },
+    {
+      "id": "15",
+      "item": "1*1 square tube",
+      "price": 100,
+      "quantity": 100
+    },
+    {
+      "id": "16",
+      "item": "black sheet",
+      "price": 100,
+      "quantity": 100
+    },
+    {
+      "id": "17",
+      "item": "wire mesh",
+      "price": 100,
+      "quantity": 100
+    },
+    {
+      "id": "18",
+      "item": "paint",
+      "price": 100,
+      "quantity": 100
+    }
+  ],
+  "employees": []
+}

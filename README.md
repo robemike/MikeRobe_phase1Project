@@ -22,7 +22,7 @@ Git clone https://github.com/robemike/MikeRobe_phase1Project
 ```
 
 # Live Link
-[Git](gh-pages link)
+my live link : https://robemike.github.io/MikeRobe_phase1Project/
 
 ## Technologies used
 Github

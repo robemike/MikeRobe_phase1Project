@@ -3,25 +3,25 @@
     {
       "id": "6",
       "item": "1*1 square tube 16gauge",
-      "price": 400,
+      "price": 1000,
       "quantity": 100
     },
     {
       "id": "1",
       "item": "1/1/2 * 1/1/2 square tube 16gauge",
-      "price": 1650,
+      "price": 1300,
       "quantity": 100
     },
     {
       "id": "2",
       "item": "1/1/4 * 1/1/4 square tube 16gauge",
-      "price": 2000,
+      "price": 1150,
       "quantity": 100
     },
     {
       "id": "3",
       "item": "3/4 * 3/4 square tube 16gauge",
-      "price": 2150,
+      "price": 750,
       "quantity": 100
     },
     {
@@ -39,31 +39,31 @@
     {
       "id": "6",
       "item": "1/1/2 * 1/1/2 square tube 18gauge",
-      "price": 1650,
+      "price": 1200,
       "quantity": 100
     },
     {
       "id": "7",
       "item": "1/1/4 * 1/1/4 square tube 18gauge",
-      "price": 2000,
+      "price": 1050,
       "quantity": 100
     },
     {
       "id": "8",
       "item": "3/4 * 3/4 square tube 18gauge",
-      "price": 2150,
+      "price": 650,
       "quantity": 100
     },
     {
       "id": "9",
       "item": "3 * 3 square tubes 18gauge",
-      "price": 2800,
+      "price": 2650,
       "quantity": 100
     },
     {
       "id": "10",
       "item": "2*2 square tubes 18gauge",
-      "price": 2200,
+      "price": 2050,
       "quantity": 100
     },
     {
@@ -81,61 +81,61 @@
     {
       "id": "13",
       "item": "steel bar d8",
-      "price": 600,
+      "price": 1400,
       "quantity": 100
     },
     {
       "id": "14",
       "item": "steel bar d10",
-      "price": 100,
+      "price": 1800,
       "quantity": 100
     },
     {
       "id": "15",
       "item": "steel bar d12",
-      "price": 100,
+      "price": 2200,
       "quantity": 100
     },
     {
       "id": "16",
       "item": "steel bar d14",
-      "price": 100,
+      "price": 2650,
       "quantity": 100
     },
     {
       "id": "17",
       "item": "steel bar d16",
-      "price": 100,
+      "price": 2800,
       "quantity": 100
     },
     {
       "id": "18",
       "item": "steel bar d20",
-      "price": 100,
+      "price": 3500,
       "quantity": 100
     },
     {
       "id": "19",
       "item": "plain sheet 30gauge",
-      "price": 100,
+      "price": 1400,
       "quantity": 100
     },
     {
       "id": "20",
       "item": "plain sheet 32gauge",
-      "price": 100,
+      "price": 1200,
       "quantity": 100
     },
     {
       "id": "21",
       "item": "wire mesh 32gauge",
-      "price": 100,
+      "price": 1400,
       "quantity": 100
     },
     {
       "id": "22",
       "item": "wire mesh 30gauge",
-      "price": 100,
+      "price": 1600,
       "quantity": 100
     }
   ],

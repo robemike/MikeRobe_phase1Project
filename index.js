@@ -19,6 +19,9 @@ function saveHeading() {
 };
 // saveHeading retrieves the new heading text from the same input field, saves it to local storage under the key 'customHeading', and clears the input field.
 
+
+// There's a function toggleDropdown that shows the visibility of a dropdown menu.
+// It's triggered by clicking a button with the id 'dropdownBtn'.
 function toggleDropdown() {
     const dropdownContent = document.getElementById('dropdownContent');
     dropdownContent.classList.toggle('show');

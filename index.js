@@ -4,18 +4,20 @@ window.onload = function () {
         document.getElementById('heading').innerText = storedHeading;
     }
 };
+// There are two functions, changeHeading and saveHeading, associated with changing and saving a heading.
 
 function changeHeading() {
     let newHeadingText = document.getElementById('newinputheading').value;
     document.getElementById('heading').innerText = newHeadingText;
 };
-
+// changeHeading retrieves the new heading text from an input field and sets it as the text content of the element 
 
 function saveHeading() {
     let newHeadingText = document.getElementById('newinputheading').value;
     localStorage.setItem('customHeading', newHeadingText);
     document.getElementById("newinputheading").value = "";
 };
+// saveHeading retrieves the new heading text from the same input field, saves it to local storage under the key 'customHeading', and clears the input field.
 
 function toggleDropdown() {
     const dropdownContent = document.getElementById('dropdownContent');

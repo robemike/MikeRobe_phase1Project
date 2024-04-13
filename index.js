@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let totalSum = 0;
 
-
+    // The following function is responsible for fetching data from the API endpoint 
+    // The fetched data is then filtered based on a search term entered into an input field and displayed in a dropdown
     function fetchData() {
         fetch("http://localhost:3000/products")
             .then(response => response.json())
@@ -122,7 +123,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    
+    // When a product is selected from the dropdown, it is displayed in a table (displayBox) along with its price and quantity.
+    // Clicking on the quantity increases the quantity and updates the total price 
     function displaySelectedProduct(product) {
         const row = document.createElement("tr");
         row.innerHTML = `
@@ -148,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
     
-    
+    // The total price of all selected items is calculated and displayed in a separate row
     function updateTotal() {
         totalSum = 0;
         const rows = displayBox.querySelectorAll("tr");
@@ -163,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <td>${totalSum}</td>
         `;
     }
-
+    // There's a Sell button that prompts the user for the amount given by the customer and calculates the balance.
 
     displayBox.parentNode.appendChild(totalRow);
 
@@ -189,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
+// There's functionality to show an employee list when clicking a button (showEmployeesButton).
 document.addEventListener('DOMContentLoaded', function () {
     const showEmployeesButton = document.getElementById('showEmployeesButton');
     const employeeList = document.getElementById('employeeList');

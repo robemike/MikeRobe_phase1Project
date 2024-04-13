@@ -197,6 +197,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // There's functionality to show an employee list when clicking a button (showEmployeesButton).
+// Gives a user a chance to change the employee names when he or she clicks on the employee name 
+// This will bring back a prompt of changing the employee name 
 document.addEventListener('DOMContentLoaded', function () {
     const showEmployeesButton = document.getElementById('showEmployeesButton');
     const employeeList = document.getElementById('employeeList');

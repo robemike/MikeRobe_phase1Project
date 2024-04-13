@@ -78,26 +78,26 @@ document.addEventListener("DOMContentLoaded", function () {
         if (filteredProducts.length > 0) {
             const dropdown = document.createElement("div");
             dropdown.classList.add("dropdown");
-            
+
             filteredProducts.forEach(product => {
                 const option = document.createElement("div");
                 option.classList.add("dropdown-option");
-                
-                
+
+
                 const itemColumn = document.createElement("div");
                 itemColumn.textContent = product.item;
                 itemColumn.classList.add("column");
-                
+
                 const priceColumn = document.createElement("div");
                 priceColumn.textContent = `Price: ${product.price}`;
                 priceColumn.classList.add("column");
-                
+
                 const quantityColumn = document.createElement("div");
                 quantityColumn.textContent = `Quantity: ${product.quantity}`;
                 quantityColumn.classList.add("column");
-                
-                
-                
+
+
+
                 option.addEventListener("click", function () {
                     searchInput.value = product.item;
                     searchInput.value = '';
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 option.appendChild(itemColumn);
                 option.appendChild(priceColumn);
                 option.appendChild(quantityColumn);
-                
+
                 dropdown.appendChild(option);
             });
 
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             dropdown.appendChild(changePriceButton)
-            
+
             searchResults.appendChild(dropdown);
         }
     }
@@ -138,10 +138,10 @@ document.addEventListener("DOMContentLoaded", function () {
     <td class="quantity-cell" >0</td>
     <td>${0}</td>
     `;
-    displayBox.appendChild(row);
-    
-    const quantityCell = row.querySelector(".quantity-cell");
-    quantityCell.addEventListener("click", function () {
+        displayBox.appendChild(row);
+
+        const quantityCell = row.querySelector(".quantity-cell");
+        quantityCell.addEventListener("click", function () {
             let currentQuantity = parseInt(quantityCell.textContent);
             if (isNaN(currentQuantity)) {
                 currentQuantity = 0;
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
             updateTotal();
         });
     }
-    
+
     // The total price of all selected items is calculated and displayed in a separate row
     function updateTotal() {
         totalSum = 0;
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
     searchInput.addEventListener("input", fetchData);
 
     sellButton.addEventListener("click", function () {
-
+        // prompt to enter the amount given by the customer 
         const amountGiven = parseFloat(prompt("Amount given by customer:"));
         if (amountGiven < totalSum) {
             alert("Amount not enough")
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const balance = amountGiven - totalSum;
             alert(`Balance: ${balance}`);
         } else {
-            alert("Invalid input. Please enter a valid amount.");
+            alert("Enter a vaid number kindly!");
         }
     });
 });
@@ -221,4 +221,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-

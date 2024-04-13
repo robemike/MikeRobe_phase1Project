@@ -25,8 +25,10 @@ Git clone https://github.com/robemike/MikeRobe_phase1Project
 my live link : https://robemike.github.io/MikeRobe_phase1Project/
 
 ## Technologies used
-Github
-Javascript
+GitHub
+JavaScript
+HTML
+CSS
 
 ## Support and contact details
 https://github.com/robemike

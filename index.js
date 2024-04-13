@@ -90,8 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 quantityColumn.textContent = `Quantity: ${product.quantity}`;
                 quantityColumn.classList.add("column");
                 
-                // quantityColumn.textContent = `Quantity: ${product.quantity}`;
-                // quantityColumn.classList.add("column");
                 
                 
                 option.addEventListener("click", function () {

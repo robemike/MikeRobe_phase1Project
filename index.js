@@ -72,12 +72,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (filteredProducts.length > 0) {
             const dropdown = document.createElement("div");
             dropdown.classList.add("dropdown");
-
+            
             filteredProducts.forEach(product => {
                 const option = document.createElement("div");
                 option.classList.add("dropdown-option");
-
-
+                
+                
                 const itemColumn = document.createElement("div");
                 itemColumn.textContent = product.item;
                 itemColumn.classList.add("column");
@@ -85,12 +85,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 const priceColumn = document.createElement("div");
                 priceColumn.textContent = `Price: ${product.price}`;
                 priceColumn.classList.add("column");
-
+                
                 const quantityColumn = document.createElement("div");
                 quantityColumn.textContent = `Quantity: ${product.quantity}`;
                 quantityColumn.classList.add("column");
-
-
+                
+                // quantityColumn.textContent = `Quantity: ${product.quantity}`;
+                // quantityColumn.classList.add("column");
+                
+                
                 option.addEventListener("click", function () {
                     searchInput.value = product.item;
                     searchInput.value = '';
@@ -102,38 +105,38 @@ document.addEventListener("DOMContentLoaded", function () {
                 option.appendChild(itemColumn);
                 option.appendChild(priceColumn);
                 option.appendChild(quantityColumn);
-
+                
                 dropdown.appendChild(option);
             });
 
             const changePriceButton = document.createElement("button");
             changePriceButton.textContent = "Change Prices";
             changePriceButton.addEventListener("click", function () {
-                
+
                 const newPrices = Array.from(dropdown.querySelectorAll("input")).map(input => parseFloat(input.value));
-                console.log(newPrices); 
+                console.log(newPrices);
                 alert("Changes saved!");
             });
 
             dropdown.appendChild(changePriceButton)
-
+            
             searchResults.appendChild(dropdown);
         }
     }
 
-
+    
     function displaySelectedProduct(product) {
         const row = document.createElement("tr");
         row.innerHTML = `
-    <td>${product.item}</td>
+        <td>${product.item}</td>
     <td>${product.price}</td>
     <td class="quantity-cell" >0</td>
     <td>${0}</td>
-`;
-        displayBox.appendChild(row);
-
-        const quantityCell = row.querySelector(".quantity-cell");
-        quantityCell.addEventListener("click", function () {
+    `;
+    displayBox.appendChild(row);
+    
+    const quantityCell = row.querySelector(".quantity-cell");
+    quantityCell.addEventListener("click", function () {
             let currentQuantity = parseInt(quantityCell.textContent);
             if (isNaN(currentQuantity)) {
                 currentQuantity = 0;
@@ -146,8 +149,8 @@ document.addEventListener("DOMContentLoaded", function () {
             updateTotal();
         });
     }
-
-
+    
+    
     function updateTotal() {
         totalSum = 0;
         const rows = displayBox.querySelectorAll("tr");
@@ -211,3 +214,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+

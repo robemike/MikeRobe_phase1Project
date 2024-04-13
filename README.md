@@ -5,7 +5,7 @@
 #### By *Robe Mike Gichu*
 
 ## Description
-A Business Management System that allows users to sell products, make updates on things such as employee names.
+A Business Management System  that allows users to manage products, sell items, and handling employee information. 
 
 
 ## Installation
